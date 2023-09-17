@@ -14,7 +14,6 @@ const again = document.querySelector(".again");
 // function to compare the numbers
 
 function compareNumbers() {
-    console.log(guessingNumber, Number(guess.value));
     if (guessingNumber === Number(guess.value)) {
         message.textContent = "Correct Number!";
         document.querySelector("body").style.backgroundColor = "green";
@@ -25,7 +24,6 @@ function compareNumbers() {
         highscore.textContent = highScore;
         number.textContent = guessingNumber;
         check.disabled = true;
-        console.log("Congrates....you won!!!!");
     }
    
     else if (guessingNumber !== Number(guess.value)) {
@@ -40,7 +38,6 @@ function compareNumbers() {
 
         score.textContent = --scoreValue;
         
-        console.log(scoreValue);
     }
 }
 
